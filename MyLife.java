@@ -6,6 +6,7 @@ public class MyLife {
 		Scanner reader = new Scanner(System.in);
 		Person player = new Person("John" , 18);
 		Story theStory = new Story();
+		Help helper = new Help();
 
 		String user_command;
 		String prompt;
@@ -14,18 +15,19 @@ public class MyLife {
 
 		while (true) {
 
-			prompt = ("It is a " + theStory.getWeather() + " day at " +
+			prompt = ("\nIt is a " + theStory.getWeather() + " day at " +
 			          "" + theStory.getPlace() + " on " + theStory.getDate());
 			System.out.println(prompt);
 			System.out.println("What would you like to do?");
 			user_command = reader.nextLine();
 
 			if (user_command.equals("help")) {
-				Help helper = new Help();
 				helper.printMain();
-			} else if (user_command.equals("exit")) {
+			} else if (user_command.equals("library")) {
+				helper.mainlibrary();
+			}else if (user_command.equals("exit")) {
 				break;
-			} else if (user_command.equals("new day")) {
+			} else if (user_command.equals("newday")) {
 				theStory.newDay();
 			} else {
 				System.out.println("Please enter a valid command");

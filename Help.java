@@ -17,6 +17,9 @@ public class Help {
 
 			if (user_command.equals("exit")){
 				break;
+			} else if (user_command.equals("newday")){
+				System.out.println("Increments day by 1");
+				break;
 			} else{
 				System.out.println("The specific term is invalid");
 			}
