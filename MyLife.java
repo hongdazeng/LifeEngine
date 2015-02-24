@@ -25,7 +25,9 @@ public class MyLife {
 				helper.printMain();
 			} else if (user_command.equals("library")) {
 				helper.mainlibrary();
-			}else if (user_command.equals("exit")) {
+			} else if (user_command.equalsIgnoreCase("who am i")) {
+				System.out.println(player.basicInfo());
+			} else if (user_command.equals("exit")) {
 				break;
 			} else if (user_command.equals("newday")) {
 				theStory.newDay();

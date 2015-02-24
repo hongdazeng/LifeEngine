@@ -57,6 +57,10 @@ public class Story {
 		default: return "Error:No Month";
 		}
 	}
+	
+	public void setWeather(int ui) {
+		weather = ui;
+	}
 
 	public int getMonthN() {
 		return month;

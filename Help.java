@@ -8,6 +8,7 @@ public class Help {
 	public void printMain() {
 		System.out.println("Type library for command look up");
 		System.out.println("Type exit to quit");
+		System.out.println("Type 'who am i' to see your basic stats");
 	}
 
 	public void mainlibrary() {
@@ -15,12 +16,12 @@ public class Help {
 			System.out.println("Please enter a term to look up");
 			user_command = reader.nextLine();
 
-			if (user_command.equals("exit")){
+			if (user_command.equals("exit")) {
 				break;
-			} else if (user_command.equals("newday")){
-				System.out.println("Increments day by 1");
+			} else if (user_command.equals("newday")) {
+				System.out.println("newday - Increments day by 1");
 				break;
-			} else{
+			} else {
 				System.out.println("The specific term is invalid");
 			}
 		}
