@@ -4,24 +4,32 @@ public class Person {
 
 	int age;
 	int gold;
+	int energy;
 
 	int intel;
 	int strength;
+	int health;
 
 	public Person() {
 		this.name = "John";
 		this.age = 16;
+
+		//day to day usage
+		this.energy = 10;
+
+		//inventory
 		this.gold = 0;
+
+		// Personal skills
+		this.health = 10;
 		this.intel = 0;
 		this.strength = 0;
 	}
 
 	public Person(String thename, int theage) {
+		super();
 		this.name = thename;
 		this.age = theage;
-		this.gold = 0;
-		this.intel = 0;
-		this.strength = 0;
 	}
 
 	public String basicInfo() {
@@ -42,6 +50,10 @@ public class Person {
 		this.gold = thegold;
 	}
 
+	public void setHealth(int thehealth) {
+		this.health = thehealth;
+	}
+
 	public String getName() {
 		return this.name;
 	}
@@ -52,6 +64,10 @@ public class Person {
 
 	public int getGold() {
 		return this.gold;
+	}
+
+	public int getHealth() {
+		return this.health;
 	}
 
 }

@@ -5,7 +5,7 @@ public class Monster {
 	String mobtype;
 	int relationship;
 
-	public Monster(){
+	public Monster() {
 		this.name = "Mouse";
 		this.mobtype = "Animal";
 		this.relationship = 0;
