@@ -1,12 +1,13 @@
 import java.util.*;
 
 public class MyLife {
-	public static void main(String[] args) {
 
-		Scanner reader = new Scanner(System.in);
-		Person player = new Person("John" , 18);
-		Story theStory = new Story();
-		Help helper = new Help();
+	static Scanner reader = new Scanner(System.in);
+	static Person player = new Person("John" , 18);
+	static Story theStory = new Story();
+	static Help helper = new Help();
+
+	public static void main(String[] args) {
 
 		String user_command;
 		String prompt;

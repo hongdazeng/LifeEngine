@@ -1,9 +1,18 @@
 public class Monster {
 
-	String name;
+	String name;		
 
 	String mobtype;
+	// Animal
+	// Monster
+	// Boss
+	// Pest
+	// Enemy
 	int relationship;
+	// 0 = neutral
+	// 1 = friendly
+	// 2 = agressive
+	// 3 = owned
 
 	public Monster() {
 		this.name = "Mouse";

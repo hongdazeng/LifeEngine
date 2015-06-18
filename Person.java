@@ -2,13 +2,15 @@ public class Person {
 
 	String name;
 
-	int age;
-	int gold;
-	int energy;
+	int age;		//stat 0
 
-	int intel;
-	int strength;
-	int health;
+	int gold;		//stat 20
+	int health;		//stat 21
+	int energy;		//stat 22
+
+	int intel;		//stat 31
+	int strength;	//stat 32
+
 
 	public Person() {
 		this.name = "John";
